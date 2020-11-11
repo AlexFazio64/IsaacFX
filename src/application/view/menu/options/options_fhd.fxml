@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--suppress ALL -->
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="1080.0" maxWidth="1920.0" minHeight="1080.0" minWidth="1920.0" onKeyPressed="#changeFocus"
+            prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.OptionMenuController">
+	<children>
+		<ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true"
+		           AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<image>
+				<Image url="@../../../resources/graphics/splash/cover_fhd.jpg"/>
+			</image>
+			<effect>
+				<ColorAdjust brightness="-0.4"/>
+			</effect>
+			<viewport>
+				<Rectangle2D height="1080.0" width="1920.0"/>
+			</viewport>
+		</ImageView>
+		<Label fx:id="resLbl" focusTraversable="false" layoutX="507.0" layoutY="186.0" prefHeight="40.0"
+		       prefWidth="900.0" textAlignment="CENTER" textFill="WHITE" AnchorPane.topAnchor="186.0">
+			<font>
+				<Font name="Arial Bold" size="64.0"/>
+			</font>
+		</Label>
+		<Label fx:id="volLbl" focusTraversable="false" layoutX="507.0" layoutY="259.0" prefHeight="40.0"
+		       prefWidth="900.0" textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Arial Bold" size="64.0"/>
+			</font>
+		</Label>
+		<Label fx:id="langLbl" focusTraversable="false" layoutX="507.0" layoutY="333.0" prefHeight="40.0"
+		       prefWidth="900.0" textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Arial Bold" size="64.0"/>
+			</font>
+		</Label>
+		<Label fx:id="commLbl" alignment="CENTER" focusTraversable="false" layoutX="507.0" layoutY="407.0"
+		       onMouseEntered="#focusCommands" onMouseExited="#loseFocus" onMouseReleased="#selectOption"
+		       prefHeight="40.0" prefWidth="900.0" textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Arial Bold" size="64.0"/>
+			</font>
+		</Label>
+		<Label fx:id="backLbl" alignment="CENTER" focusTraversable="false" layoutX="510.0" layoutY="503.0"
+		       onMouseEntered="#focusBack" onMouseExited="#loseFocus" onMouseReleased="#selectOption" prefHeight="40.0"
+		       prefWidth="900.0" textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Arial Bold" size="64.0"/>
+			</font>
+		</Label>
+		<ChoiceBox fx:id="resCHBX" focusTraversable="false" layoutX="1257.0" layoutY="207.0" prefWidth="150.0"/>
+		<Slider fx:id="volSlider" blockIncrement="0.01" focusTraversable="false" layoutX="1262.0" layoutY="278.0"
+		        max="1.0" value="0.5"/>
+		<Button fx:id="itaBtn" alignment="CENTER" layoutX="1357.0" layoutY="350.0" maxHeight="40.0" maxWidth="50.0"
+		        minHeight="40.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#setItaLang" prefHeight="40.0"
+		        prefWidth="50.0"
+		        style="-fx-background-color: none; -fx-border-color: white; -fx-border-width: 2; -fx-border-radius: 4;"
+		        text="ITA" textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="System Bold" size="13.0"/>
+			</font>
+		</Button>
+		<Button fx:id="engBtn" alignment="CENTER" layoutX="1257.0" layoutY="350.0" maxHeight="40.0" maxWidth="50.0"
+		        minHeight="40.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#setEngLang" prefHeight="40.0"
+		        prefWidth="50.0"
+		        style="-fx-background-color: none; -fx-border-color: white; -fx-border-width: 2; -fx-border-radius: 4;"
+		        text="ENG" textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="System Bold" size="13.0"/>
+			</font>
+		</Button>
+	</children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--suppress ALL -->
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="576.0" maxWidth="1024.0" minHeight="576.0" minWidth="1024.0" onKeyPressed="#changeFocus"
+            prefHeight="576.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.MenuController">
+	<children>
+		<ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true" preserveRatio="true"
+		           AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<image>
+				<Image url="@../../resources/graphics/splash/cover_std.jpg"/>
+			</image>
+			<effect>
+				<ColorAdjust brightness="-0.4"/>
+			</effect>
+			<viewport>
+				<Rectangle2D height="1080.0" width="1920.0"/>
+			</viewport>
+		</ImageView>
+		<Label fx:id="startLbl" alignment="CENTER" layoutX="237.0" layoutY="60.0" onMouseEntered="#focusStart"
+		       onMouseExited="#loseFocus" onMouseReleased="#selectOption" prefHeight="40.0" prefWidth="550.0"
+		       textAlignment="CENTER" textFill="WHITE" AnchorPane.topAnchor="83.0">
+			<font>
+				<Font name="Arial Bold" size="36.0"/>
+			</font>
+		</Label>
+		<Label fx:id="optionsLbl" alignment="CENTER" layoutX="237.0" layoutY="125.0" onMouseEntered="#focusOptions"
+		       onMouseExited="#loseFocus" onMouseReleased="#selectOption" prefHeight="40.0" prefWidth="550.0"
+		       textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Arial Bold" size="36.0"/>
+			</font>
+		</Label>
+		<Label fx:id="leaderLbl" alignment="CENTER" layoutX="237.0" layoutY="167.0" onMouseEntered="#focusLeader"
+		       onMouseExited="#loseFocus" onMouseReleased="#selectOption" prefHeight="40.0" prefWidth="550.0"
+		       textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Arial Bold" size="36.0"/>
+			</font>
+		</Label>
+		<Label fx:id="createLbl" alignment="CENTER" layoutX="237.0" layoutY="209.0" onMouseEntered="#focusCreate"
+		       onMouseExited="#loseFocus" onMouseReleased="#selectOption" prefHeight="40.0" prefWidth="550.0"
+		       textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Arial Bold" size="36.0"/>
+			</font>
+		</Label>
+		<Label fx:id="exitLbl" alignment="CENTER" layoutX="237.0" layoutY="267.0" onMouseEntered="#focusExit"
+		       onMouseExited="#loseFocus" onMouseReleased="#selectOption" prefHeight="40.0" prefWidth="550.0"
+		       textAlignment="CENTER" textFill="WHITE">
+			<font>
+				<Font name="Arial Bold" size="36.0"/>
+			</font>
+		</Label>
+		<Button layoutX="140.0" layoutY="-40.0" mnemonicParsing="false" text="Button"/>
+	</children>
+</AnchorPane>

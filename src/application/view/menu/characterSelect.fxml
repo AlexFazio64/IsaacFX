@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="mainpane" focusTraversable="true" maxHeight="1080.0" maxWidth="1920.0" minHeight="576.0"
+            minWidth="1024.0" onKeyPressed="#changeFocus" prefHeight="720.0" prefWidth="1280.0"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="application.controller.CharacterSelectController">
+	<children>
+		<BorderPane prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+		            AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<center>
+				<GridPane BorderPane.alignment="CENTER">
+					<columnConstraints>
+						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+						<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+					</columnConstraints>
+					<rowConstraints>
+						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER"/>
+						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER"/>
+						<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+					</rowConstraints>
+					<children>
+						<BorderPane onMouseClicked="#selectIsaac" onMouseEntered="#focusIsaac"
+						            onMouseExited="#loseFocus" prefHeight="200.0" prefWidth="200.0"
+						            GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.rowSpan="3">
+							<center>
+								<ImageView fx:id="isaacSprite" fitHeight="200.0" fitWidth="200.0" opacity="0.5"
+								           pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER"/>
+							</center>
+							<bottom>
+								<Label fx:id="isaacLbl" BorderPane.alignment="CENTER">
+									<font>
+										<Font name="Arial Bold" size="36.0"/>
+									</font>
+								</Label>
+							</bottom>
+						</BorderPane>
+						<BorderPane layoutX="266.0" layoutY="242.0" onMouseClicked="#selectDark"
+						            onMouseEntered="#focusDark" onMouseExited="#loseFocus" prefHeight="200.0"
+						            prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1"
+						            GridPane.rowSpan="3">
+							<bottom>
+								<Label fx:id="darkisaacLbl" BorderPane.alignment="CENTER">
+									<font>
+										<Font name="Arial Bold" size="36.0"/>
+									</font>
+								</Label>
+							</bottom>
+							<center>
+								<ImageView fx:id="darkSprite" fitHeight="200.0" fitWidth="200.0" opacity="0.5"
+								           pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER"/>
+							</center>
+						</BorderPane>
+						<BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1"
+						            GridPane.columnSpan="3">
+							<center>
+								<Label fx:id="charLbl" BorderPane.alignment="CENTER">
+									<font>
+										<Font name="Arial Bold" size="36.0"/>
+									</font>
+								</Label>
+							</center>
+						</BorderPane>
+						<BorderPane layoutX="522.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0"
+						            GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="5">
+							<center>
+								<Label fx:id="backLbl" onMouseClicked="#selectBack" onMouseEntered="#focusBack"
+								       onMouseExited="#loseFocus" BorderPane.alignment="CENTER">
+									<font>
+										<Font name="Arial Bold" size="36.0"/>
+									</font>
+								</Label>
+							</center>
+						</BorderPane>
+					</children>
+				</GridPane>
+			</center>
+		</BorderPane>
+	</children>
+</AnchorPane>
