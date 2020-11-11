@@ -28,7 +28,7 @@ public class Score implements Serializable {
 	}
 	
 	public Seed getSeed() {
-		Seed ret = new Seed(seed.length(), null, null);
+		Seed ret = new Seed(seed.length());
 		ret.setResult(seed, dimension);
 		return ret;
 	}

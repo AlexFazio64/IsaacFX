@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Isaac Project.iml" filepath="$PROJECT_DIR$/Isaac Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Isaac Server Standalone.iml" filepath="$PROJECT_DIR$/Isaac Server Standalone.iml" />
     </modules>
   </component>
 </project>

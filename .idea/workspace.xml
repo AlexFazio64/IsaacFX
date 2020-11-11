@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49ad1e05-cf30-4b9f-a5ba-f8095d38b61c" name="Default Changelist" comment="" />
+    <list default="true" id="87cc2eee-10fb-4411-9906-9b07243da6a6" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +14,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1k7YSal6RO7RMO8L5lYDYRuJyVZ" />
+  <component name="ProjectId" id="1k7hY6f3BxwV4zxxRc90obsjNxt" />
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="compactDirectories" value="true" />
@@ -28,15 +28,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="application.Main" />
-      <module name="Isaac Project" />
+    <configuration name="ServerGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="application.ServerGUI" />
+      <module name="Isaac Server Standalone" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="application.*" />
@@ -47,25 +47,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ServerGUI" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="49ad1e05-cf30-4b9f-a5ba-f8095d38b61c" name="Default Changelist" comment="" />
-      <created>1605053097787</created>
+      <changelist id="87cc2eee-10fb-4411-9906-9b07243da6a6" name="Default Changelist" comment="" />
+      <created>1605057581871</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1605053097787</updated>
-      <workItem from="1605053099234" duration="408000" />
-      <workItem from="1605057314499" duration="255000" />
-      <workItem from="1605057643312" duration="53000" />
-      <workItem from="1605058078894" duration="38000" />
-      <workItem from="1605058203291" duration="111000" />
+      <updated>1605057581871</updated>
+      <workItem from="1605057583124" duration="57000" />
+      <workItem from="1605057699906" duration="193000" />
     </task>
     <servers />
   </component>
@@ -73,37 +83,25 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="249" y="0" key="#Project_Structure" timestamp="1605058221057">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1605057889096">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1605058221057" />
-    <state x="538" y="296" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605053123885">
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1605057889096" />
+    <state width="1515" height="204" key="GridCell.Tab.0.bottom" timestamp="1605057863770">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="538" y="296" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1605053123885" />
-    <state x="629" y="298" key="Github.ShareDialog" timestamp="1605058260553">
+    <state width="1515" height="204" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605057863770" />
+    <state width="1515" height="204" key="GridCell.Tab.0.center" timestamp="1605057863770">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="629" y="298" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1605058260553" />
-    <state width="1515" height="204" key="GridCell.Tab.0.bottom" timestamp="1605057696256">
+    <state width="1515" height="204" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605057863770" />
+    <state width="1515" height="204" key="GridCell.Tab.0.left" timestamp="1605057863770">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="204" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605057696256" />
-    <state width="1515" height="204" key="GridCell.Tab.0.center" timestamp="1605057696255">
+    <state width="1515" height="204" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605057863770" />
+    <state width="1515" height="204" key="GridCell.Tab.0.right" timestamp="1605057863770">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="204" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605057696255" />
-    <state width="1515" height="204" key="GridCell.Tab.0.left" timestamp="1605057696255">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="204" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605057696255" />
-    <state width="1515" height="204" key="GridCell.Tab.0.right" timestamp="1605057696255">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1515" height="204" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605057696255" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605058236236">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605058236236" />
+    <state width="1515" height="204" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605057863770" />
   </component>
 </project>
